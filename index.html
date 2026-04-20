@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="A basic, modern portfolio website showcasing my skills and projects.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Optional for icons, using simple ones -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="greeting">Hello, I am</p>
+            <h1 class="name">A Creative Developer</h1>
+            <p class="tagline">I build beautiful and interactive web experiences.</p>
+            <a href="#contact" class="btn primary-btn">Let's Talk</a>
+            <a href="#projects" class="btn secondary-btn">View Work</a>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate web developer with a keen eye for modern design. I specialize in creating responsive, user-friendly, and visually stunning websites.</p>
+                <p>My goal is to translate ideas into digital realities that leave a lasting impression.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+        <div class="section-title">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Semantic & Accessible structure</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid, Animations</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>DOM manipulation, ES6+</p>
+            </div>
+            <div class="skill-card">
+                <h3>Responsive Design</h3>
+                <p>Mobile-first approach</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img placeholder-img"></div>
+                <div class="project-info">
+                    <h3>E-Commerce App</h3>
+                    <p>A modern shopping experience with smooth animations.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img placeholder-img"></div>
+                <div class="project-info">
+                    <h3>Dashboard UI</h3>
+                    <p>Clean and analytical dashboard design.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img placeholder-img"></div>
+                <div class="project-info">
+                    <h3>Landing Page</h3>
+                    <p>High-conversion landing page with glassmorphism.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-container">
+            <p>Ready to start your next project with me? Let's connect and build something amazing together!</p>
+            <a href="mailto:hello@example.com" class="btn primary-btn">Email Me</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Portfolio.</h3>
+                <p>Building digital experiences that matter.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Github"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
