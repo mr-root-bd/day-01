@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title data-i18n="title">My Portfolio</title>
     <meta name="description" content="A basic, modern portfolio website showcasing my skills and projects.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -13,93 +13,96 @@
     <nav class="navbar">
         <div class="logo">Portfolio.</div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div class="nav-actions">
+            <button id="lang-toggle" class="lang-btn">বাং</button>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <p class="greeting">Hello, I am</p>
-            <h1 class="name">A Creative Developer</h1>
-            <p class="tagline">I build beautiful and interactive web experiences.</p>
-            <a href="#contact" class="btn primary-btn">Let's Talk</a>
-            <a href="#projects" class="btn secondary-btn">View Work</a>
+            <p class="greeting" data-i18n="hero_greeting">Hello, I am</p>
+            <h1 class="name" data-i18n="hero_name">A Creative Developer</h1>
+            <p class="tagline" data-i18n="hero_tagline">I build beautiful and interactive web experiences.</p>
+            <a href="#contact" class="btn primary-btn" data-i18n="hero_btn_talk">Let's Talk</a>
+            <a href="#projects" class="btn secondary-btn" data-i18n="hero_btn_work">View Work</a>
         </div>
         <div class="hero-shape"></div>
     </section>
 
     <section id="about" class="section">
         <div class="section-title">
-            <h2>About Me</h2>
+            <h2 data-i18n="about_title">About Me</h2>
         </div>
         <div class="about-content">
             <div class="about-text">
-                <p>I am a passionate web developer with a keen eye for modern design. I specialize in creating responsive, user-friendly, and visually stunning websites.</p>
-                <p>My goal is to translate ideas into digital realities that leave a lasting impression.</p>
+                <p data-i18n="about_p1">I am a passionate web developer with a keen eye for modern design. I specialize in creating responsive, user-friendly, and visually stunning websites.</p>
+                <p data-i18n="about_p2">My goal is to translate ideas into digital realities that leave a lasting impression.</p>
             </div>
         </div>
     </section>
 
     <section id="skills" class="section bg-alt">
         <div class="section-title">
-            <h2>My Skills</h2>
+            <h2 data-i18n="skills_title">My Skills</h2>
         </div>
         <div class="skills-container">
             <div class="skill-card">
                 <h3>HTML5</h3>
-                <p>Semantic & Accessible structure</p>
+                <p data-i18n="skill_html_desc">Semantic & Accessible structure</p>
             </div>
             <div class="skill-card">
                 <h3>CSS3</h3>
-                <p>Flexbox, Grid, Animations</p>
+                <p data-i18n="skill_css_desc">Flexbox, Grid, Animations</p>
             </div>
             <div class="skill-card">
                 <h3>JavaScript</h3>
-                <p>DOM manipulation, ES6+</p>
+                <p data-i18n="skill_js_desc">DOM manipulation, ES6+</p>
             </div>
             <div class="skill-card">
-                <h3>Responsive Design</h3>
-                <p>Mobile-first approach</p>
+                <h3 data-i18n="skill_res_title">Responsive Design</h3>
+                <p data-i18n="skill_res_desc">Mobile-first approach</p>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
         <div class="section-title">
-            <h2>Featured Projects</h2>
+            <h2 data-i18n="projects_title">Featured Projects</h2>
         </div>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-img placeholder-img"></div>
                 <div class="project-info">
-                    <h3>E-Commerce App</h3>
-                    <p>A modern shopping experience with smooth animations.</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <h3 data-i18n="proj1_title">E-Commerce App</h3>
+                    <p data-i18n="proj1_desc">A modern shopping experience with smooth animations.</p>
+                    <a href="#" class="project-link" data-i18n="btn_view_project">View Project</a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-img placeholder-img"></div>
                 <div class="project-info">
-                    <h3>Dashboard UI</h3>
-                    <p>Clean and analytical dashboard design.</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <h3 data-i18n="proj2_title">Dashboard UI</h3>
+                    <p data-i18n="proj2_desc">Clean and analytical dashboard design.</p>
+                    <a href="#" class="project-link" data-i18n="btn_view_project">View Project</a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-img placeholder-img"></div>
                 <div class="project-info">
-                    <h3>Landing Page</h3>
-                    <p>High-conversion landing page with glassmorphism.</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <h3 data-i18n="proj3_title">Landing Page</h3>
+                    <p data-i18n="proj3_desc">High-conversion landing page with glassmorphism.</p>
+                    <a href="#" class="project-link" data-i18n="btn_view_project">View Project</a>
                 </div>
             </div>
         </div>
@@ -107,11 +110,11 @@
 
     <section id="contact" class="section bg-alt">
         <div class="section-title">
-            <h2>Get In Touch</h2>
+            <h2 data-i18n="contact_title">Get In Touch</h2>
         </div>
         <div class="contact-container">
-            <p>Ready to start your next project with me? Let's connect and build something amazing together!</p>
-            <a href="mailto:hello@example.com" class="btn primary-btn">Email Me</a>
+            <p data-i18n="contact_desc">Ready to start your next project with me? Let's connect and build something amazing together!</p>
+            <a href="mailto:hello@example.com" class="btn primary-btn" data-i18n="btn_email_me">Email Me</a>
         </div>
     </section>
 
@@ -119,18 +122,18 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <h3>Portfolio.</h3>
-                <p>Building digital experiences that matter.</p>
+                <p data-i18n="footer_desc">Building digital experiences that matter.</p>
             </div>
             <div class="footer-links">
-                <h4>Quick Links</h4>
+                <h4 data-i18n="footer_quick_links">Quick Links</h4>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
                 </ul>
             </div>
             <div class="footer-social">
-                <h4>Connect</h4>
+                <h4 data-i18n="footer_connect">Connect</h4>
                 <div class="social-icons">
                     <a href="#" aria-label="Github"><i class="fab fa-github"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -139,7 +142,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+            <p data-i18n="footer_copyright">&copy; 2026 My Portfolio. All rights reserved.</p>
         </div>
     </footer>
 
